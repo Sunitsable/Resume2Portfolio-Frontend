@@ -10,7 +10,7 @@ The page will reload when you make changes.
 nodemon ./server.js to start thte server
 
 ### Deployed website 
-https://candid-kangaroo-641eec.netlify.app/
+https://cv2portfolio.netlify.app/
 
 ###  Login Page
 ![image](https://github.com/Sunitsable/Resume2Portfolio-Frontend/assets/103995614/3bed5cf4-d6d1-49f6-9b74-cb5b338868db)
