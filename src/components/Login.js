@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/login', { username, password });
+      const response = await axios.post('https://resume2portfolio-backend.onrender.com/api/auth/login', { username, password });
       console.log(response.data);
       alert('Login successful!');
       if (response.data.message === "Login successful") {

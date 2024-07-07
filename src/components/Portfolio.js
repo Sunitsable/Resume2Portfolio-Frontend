@@ -15,7 +15,7 @@ function Portfolio() {
       setError(null); // Clear any previous errors
   
       try {
-        const response = await fetch(`http://localhost:8000/api/resumes/${user}`);
+        const response = await fetch(`https://resume2portfolio-backend.onrender.com/api/resumes/${user}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

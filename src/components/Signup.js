@@ -15,7 +15,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/signup', { username, password });
+      const response = await axios.post('https://resume2portfolio-backend.onrender.com/api/auth/signup', { username, password });
       console.log(response.data);
       alert('Signup successful!');
       

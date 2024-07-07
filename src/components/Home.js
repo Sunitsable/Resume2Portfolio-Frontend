@@ -28,7 +28,7 @@ function Home() {
     try {
       setIsLoading(true); // Set loading to true when form is submitted
   
-      const response = await fetch('http://localhost:8000/api/resumes/upload', {
+      const response = await fetch('https://resume2portfolio-backend.onrender.com/api/resumes/upload', {
         method: 'POST',
         body: formData,
       });
