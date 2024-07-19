@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useContext } from 'react';
-import './Portfolio.css'; // Import the CSS file
-import { UserContext } from '../UserContext'; 
+import './Portfolio.css';
+import { UserContext } from '../UserContext';
 
 function Portfolio() {
   const { user } = useContext(UserContext);
   const [resumeData, setResumeData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [currentDesign, setCurrentDesign] = useState('design1');
 
   useEffect(() => {
     const fetchResume = async () => {
-      
       setIsLoading(true);
-      setError(null); // Clear any previous errors
-  
+      setError(null);
+
       try {
         const response = await fetch(`https://resume2portfolio-backend.onrender.com/api/resumes/${user}`);
         if (!response.ok) {
@@ -28,10 +28,9 @@ function Portfolio() {
         setIsLoading(false);
       }
     };
-  
+
     fetchResume();
   }, [user]);
-  
 
   if (isLoading) {
     return <p>Loading resume...</p>;
@@ -99,7 +98,7 @@ function Portfolio() {
   }
 
   return (
-    <div className="portfolio">
+    <div className={`portfolio ${currentDesign}`}>
       <header className="portfolio-header">
         <h1>{resumeData.name}</h1>
         <p>Full Stack Developer</p>
@@ -132,6 +131,30 @@ function Portfolio() {
           <ExperienceList />
         </section>
       </main>
+      <br></br>
+      <div className="design-selector">
+        <h3>Choose Design</h3>
+        <div className="design-options">
+          <button
+            className={currentDesign === 'design1' ? 'active' : ''}
+            onClick={() => setCurrentDesign('design1')}
+          >
+            Minimalist
+          </button>
+          <button
+            className={currentDesign === 'design2' ? 'active' : ''}
+            onClick={() => setCurrentDesign('design2')}
+          >
+            Modern
+          </button>
+          <button
+            className={currentDesign === 'design3' ? 'active' : ''}
+            onClick={() => setCurrentDesign('design3')}
+          >
+            Elegant
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

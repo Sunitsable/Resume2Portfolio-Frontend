@@ -1,112 +1,297 @@
 /* Portfolio.css */
 
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e9e9f1;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .portfolio {
-    max-width: 2200px; /* Adjusted max-width for wider body */
-    width: 100vw; /* Ensures responsiveness and maximum width */
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fafbfb;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    height: 1000px;
-  }
-  
-  .portfolio-header {
-    text-align: center;
-    border-bottom: 2px solid #e2e2e2;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .portfolio-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #2c3e50;
-  }
-  
-  .portfolio-header p {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #7f8c8d;
-  }
-  
-  .portfolio-content {
-    padding: 1rem 2rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  section h2 {
-    font-size: 1.8rem;
-    color: #34495e;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .education-list, .project-list, .skill-list, .experience-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .education-item, .project-item, .skill-item, .experience-item {
-    margin-bottom: 1.5rem;
-  }
-  
-  .education-item h3, .project-item h3, .experience-item h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #2980b9;
-  }
-  
-  .education-item p, .project-item p, .experience-item p, .skill-item {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-    color: #7f8c8d;
-  }
-  
-  .project-item a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  .project-item a:hover {
-    text-decoration: underline;
-  }
-  
-  .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .skill-item {
-    background: #ecf0f1;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 20px;
-    color: #2c3e50;
-    font-size: 0.9rem;
-  }
-  
-  .contact-links a {
-    display: inline-block;
-    margin-right: 1rem;
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  .contact-links a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #e9e9f1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  max-width: 2200px;
+  width: 100vw;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fafbfb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: auto; /* Adjust height to auto */
+}
+
+.portfolio-header {
+  text-align: center;
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden; /* Ensure content is contained */
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.portfolio-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.portfolio-content {
+  padding: 1rem 2rem;
+  overflow: hidden; /* Ensure content is contained */
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-list, .project-list, .skill-list, .experience-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education-item, .project-item, .skill-item, .experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3, .project-item h3, .experience-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+
+.education-item p, .project-item p, .experience-item p, .skill-item {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.project-item a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: #ecf0f1;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Design 1: Minimalist */
+.portfolio.design1 {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.portfolio.design1 .portfolio-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolio.design1 .portfolio-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.portfolio.design1 .portfolio-header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.portfolio.design1 .portfolio-content {
+  padding: 20px;
+}
+
+.portfolio.design1 section {
+  margin-bottom: 20px;
+}
+
+.portfolio.design1 section h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.portfolio.design1 .portfolio-header p {
+  color: #555; /* Contrast color */
+}
+
+/* Design 2: Modern */
+.portfolio.design2 {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  background-color: #f8f9fa;
+}
+
+.portfolio.design2 .portfolio-header {
+  text-align: center;
+  padding: 30px;
+  background-color: #007bff;
+  color: #fff;
+  overflow: hidden; /* Ensure content is contained */
+}
+
+.portfolio.design2 .portfolio-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.portfolio.design2 .portfolio-header p {
+  margin: 10px 0;
+  font-size: 1.3em;
+}
+
+.portfolio.design2 .portfolio-content {
+  padding: 30px;
+}
+
+.portfolio.design2 section {
+  margin-bottom: 30px;
+}
+
+.portfolio.design2 section h2 {
+  font-size: 1.7em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.portfolio.design2 .education-item,
+.portfolio.design2 .project-item,
+.portfolio.design2 .skill-item,
+.portfolio.design2 .experience-item {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.portfolio.design2 .portfolio-header p {
+  color: #ffd700; /* Contrast color */
+}
+
+/* Design 3: Elegant */
+.portfolio.design3 {
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+.portfolio.design3 .portfolio-header {
+  text-align: center;
+  padding: 40px;
+  background-color: #6c757d;
+  color: #fff;
+  overflow: hidden; /* Ensure content is contained */
+}
+
+.portfolio.design3 .portfolio-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-style: italic;
+}
+
+.portfolio.design3 .portfolio-header p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.portfolio.design3 .portfolio-content {
+  padding: 40px;
+}
+
+.portfolio.design3 section {
+  margin-bottom: 40px;
+}
+
+.portfolio.design3 section h2 {
+  font-size: 1.8em;
+  color: #6c757d;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #6c757d;
+  padding-bottom: 10px;
+}
+
+.portfolio.design3 .education-item,
+.portfolio.design3 .project-item,
+.portfolio.design3 .skill-item,
+.portfolio.design3 .experience-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.portfolio.design3 .portfolio-header p {
+  color: #ffd700; /* Contrast color */
+}
+
+/* Design Selector */
+.design-selector {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.design-options button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.design-options button.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.design-options button:hover:not(.active) {
+  background-color: #ddd;
+}
